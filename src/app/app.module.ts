@@ -6,6 +6,8 @@ import { UsersPage } from '../pages/users/users';
 import { ReposPage } from '../pages/repos/repos';
 import { OrganisationsPage } from '../pages/organisations/organisations';
 
+import { GithubUsers } from '../providers/github-users';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -23,6 +25,6 @@ import { OrganisationsPage } from '../pages/organisations/organisations';
     ReposPage,
     OrganisationsPage
   ],
-  providers: []
+  providers: [GithubUsers] // Add GithubUsers provider
 })
 export class AppModule {}
