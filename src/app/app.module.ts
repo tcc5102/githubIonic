@@ -8,12 +8,15 @@ import { OrganisationsPage } from '../pages/organisations/organisations';
 
 import { GithubUsers } from '../providers/github-users';
 
+import { UserDetailsPage } from '../pages/user-details/user-details';
+
 @NgModule({
   declarations: [
     MyApp,
     UsersPage,
     ReposPage,
-    OrganisationsPage
+    OrganisationsPage,
+    UserDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,8 +26,9 @@ import { GithubUsers } from '../providers/github-users';
     MyApp,
     UsersPage,
     ReposPage,
-    OrganisationsPage
+    OrganisationsPage,
+    UserDetailsPage
   ],
   providers: [GithubUsers] // Add GithubUsers provider
 })
-export class AppModule {}
+export class AppModule { }
